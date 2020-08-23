@@ -40,7 +40,7 @@ app.setHandler({
     const expectedUnlockPrompt = 'Porta destrancada!';
     const lockStatus = this.$inputs.lockStatus.value;
 
-    if( lockStatus === "lock" ) {
+    if( lockStatus === "travar" ) {
       this.$speech.addText(expectedLockPrompt);
     } else {
       this.$speech.addText(expectedUnlockPrompt);

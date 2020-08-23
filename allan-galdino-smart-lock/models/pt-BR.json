@@ -6,11 +6,20 @@
       "phrases": ["oi", "olá"]
     },
     {
-      "name": "MyNameIsIntent",
-      "phrases": ["{name}", "my name is {name}", "i am {name}", "you can call me {name}"],
+      "name": "LockIntent",
+      "phrases": [
+        "{lockStatus}", 
+        "por favor {lockStatus} a porta", 
+        "{lockStatus} a porta", 
+        "poderia {lockStatus}",
+        "gostaria que {lockStatus} a porta",
+        "pode {lockStatus} a porta",
+        "quero {lockStatus} a porta",
+        "faça {lockStatus}"
+      ],
       "inputs": [
         {
-          "name": "name",
+          "name": "lockStatus",
           "type": {
             "alexa": "AMAZON.FirstName",
             "dialogflow": "@sys.given-name"
