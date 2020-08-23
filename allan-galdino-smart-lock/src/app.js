@@ -29,13 +29,24 @@ app.setHandler({
   },
 
   HelloIntent() {
-    let expectedLaunchPrompt = 'Seja Bem-Vindo! Você gostaria destrancar a porta? Checar o status? Ou trancar a porta?';
-    let expectedLaunchReprompt = 'Por favor, diga trancar porta, checar status da minha porta, ou destravar para controlar sua porta.';
-    return this.ask(expectedLaunchPrompt, expectedLaunchReprompt);
+    this.$speech.addText('Seja Bem-Vindo! Você gostaria destrancar a porta? Checar o status? Ou trancar a porta?');
+    this.$reprompt.addText('Por favor, diga trancar porta, checar status da minha porta, ou destravar para controlar sua porta.');
+    return this.ask(this.$speech, this.$reprompt);
   },
 
-  MyNameIsIntent() {
-    this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
+  LockIntent() {
+
+    const expectedLockPrompt = 'Porta trancada!';
+    const expectedUnlockPrompt = 'Porta destrancada!';
+    const lockStatus = this.$inputs.lockStatus.value;
+
+    if( lockStatus === "lock" ) {
+      this.$speech.addText(expectedLockPrompt);
+    } else {
+      this.$speech.addText(expectedUnlockPrompt);
+    }
+
+    this.tell(this.$speech);
   },
 });
 

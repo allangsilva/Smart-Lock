@@ -15,7 +15,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
       const launchRequest = await testSuite.requestBuilder.launch();
       const response = await conversation.send(launchRequest);
 
-      expect(response.isAsk(expectedLaunchPrompt, expectedLaunchReprompt)).toBeTruthy();
+      expect(response.isAsk(expectedLaunchPrompt, expectedLaunchReprompt)).toBe(true);
     });
   });
 }

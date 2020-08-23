@@ -15,7 +15,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
       const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'lock' });
       const response = await conversation.send(lockRequest);
 
-      expect(response.isTell(expectedLockPrompt).toBeTruthy());
+      expect(response.isTell(expectedLockPrompt)).toBe(true);
     });
   });
 
@@ -26,7 +26,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
       const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'unlock' });
       const response = await conversation.send(lockRequest);
 
-      expect(response.isTell(expectedUnlockPrompt).toBeTruthy());
+      expect(response.isTell(expectedUnlockPrompt)).toBe(true);
     });
   });
 }
