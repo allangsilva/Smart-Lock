@@ -1,0 +1,44 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "fechadura inteligente",
+			"types": [],
+			"intents": [
+				{
+					"name": "HelloIntent",
+					"samples": [
+						"oi",
+						"olá"
+					]
+				},
+				{
+					"name": "MyNameIsIntent",
+					"samples": [
+						"{name}",
+						"my name is {name}",
+						"i am {name}",
+						"you can call me {name}"
+					],
+					"slots": [
+						{
+							"name": "name",
+							"type": "AMAZON.FirstName"
+						}
+					]
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				}
+			]
+		}
+	}
+}

@@ -1,9 +1,9 @@
 {
-  "invocation": "my test app",
+  "invocation": "fechadura inteligente",
   "intents": [
     {
-      "name": "HelloWorldIntent",
-      "phrases": ["hello", "say hello", "say hello world"]
+      "name": "HelloIntent",
+      "phrases": ["oi", "olá"]
     },
     {
       "name": "MyNameIsIntent",
@@ -12,7 +12,7 @@
         {
           "name": "name",
           "type": {
-            "alexa": "AMAZON.US_FIRST_NAME",
+            "alexa": "AMAZON.FirstName",
             "dialogflow": "@sys.given-name"
           }
         }
