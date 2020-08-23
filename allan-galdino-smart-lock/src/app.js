@@ -25,11 +25,9 @@ app.use(
 
 app.setHandler({
   LAUNCH() {
-    return this.toIntent('HelloWorldIntent');
-  },
-
-  HelloWorldIntent() {
-    this.ask("Hello World! What's your name?", 'Please tell me your name.');
+    let expectedLaunchPrompt = 'Seja Bem-Vindo! Você gostaria destrancar a porta? Checar o status? Ou trancar a porta?';
+    let expectedLaunchReprompt = 'Por favor, diga trancar porta, checar status da minha porta, ou destravar para controlar sua porta.';
+    return this.ask(expectedLaunchPrompt, expectedLaunchReprompt);
   },
 
   MyNameIsIntent() {
