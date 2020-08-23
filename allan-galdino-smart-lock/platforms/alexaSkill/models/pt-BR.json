@@ -2,7 +2,42 @@
 	"interactionModel": {
 		"languageModel": {
 			"invocationName": "fechadura inteligente",
-			"types": [],
+			"types": [
+				{
+					"name": "lockInputType",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "trancar",
+								"synonyms": [
+									"fechar",
+									"travar",
+									"trancar",
+									"fecha",
+									"trava",
+									"tranque",
+									"trancasse",
+									"fechasse",
+									"feche"
+								]
+							}
+						},
+						{
+							"id": null,
+							"name": {
+								"value": "destrancar",
+								"synonyms": [
+									"abrir",
+									"destravar",
+									"abrisse",
+									"abra"
+								]
+							}
+						}
+					]
+				}
+			],
 			"intents": [
 				{
 					"name": "HelloIntent",
@@ -12,17 +47,21 @@
 					]
 				},
 				{
-					"name": "MyNameIsIntent",
+					"name": "LockIntent",
 					"samples": [
-						"{name}",
-						"my name is {name}",
-						"i am {name}",
-						"you can call me {name}"
+						"{lockStatus}",
+						"por favor {lockStatus} a porta",
+						"{lockStatus} a porta",
+						"poderia {lockStatus}",
+						"gostaria que {lockStatus} a porta",
+						"pode {lockStatus} a porta",
+						"quero {lockStatus} a porta",
+						"faça {lockStatus}"
 					],
 					"slots": [
 						{
-							"name": "name",
-							"type": "AMAZON.FirstName"
+							"name": "lockStatus",
+							"type": "lockInputType"
 						}
 					]
 				},

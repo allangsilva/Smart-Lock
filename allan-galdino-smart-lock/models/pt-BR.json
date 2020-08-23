@@ -20,12 +20,39 @@
       "inputs": [
         {
           "name": "lockStatus",
-          "type": {
-            "alexa": "AMAZON.FirstName",
-            "dialogflow": "@sys.given-name"
-          }
+          "type": "lockInputType"
         }
       ]
+    }
+  ],
+  "inputTypes": [
+    {
+        "name": "lockInputType",
+        "values": [
+            {
+                "value": "trancar",
+                "synonyms": [
+                  "fechar",
+                  "travar",
+                  "trancar",
+                  "fecha",
+                  "trava",
+                  "tranque",
+                  "trancasse",
+                  "fechasse",
+                  "feche"
+              ]
+            },
+            {
+                "value": "destrancar",
+                "synonyms": [
+                    "abrir",
+                    "destravar",
+                    "abrisse",
+                    "abra"
+                ]
+            }
+        ]
     }
   ],
   "alexa": {

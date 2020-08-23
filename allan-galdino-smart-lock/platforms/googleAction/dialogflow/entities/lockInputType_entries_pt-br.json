@@ -1,0 +1,27 @@
+[
+	{
+		"value": "trancar",
+		"synonyms": [
+			"trancar",
+			"fechar",
+			"travar",
+			"trancar",
+			"fecha",
+			"trava",
+			"tranque",
+			"trancasse",
+			"fechasse",
+			"feche"
+		]
+	},
+	{
+		"value": "destrancar",
+		"synonyms": [
+			"destrancar",
+			"abrir",
+			"destravar",
+			"abrisse",
+			"abra"
+		]
+	}
+]

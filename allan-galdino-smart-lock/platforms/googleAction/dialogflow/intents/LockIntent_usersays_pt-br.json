@@ -1,0 +1,142 @@
+[
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "por favor ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			},
+			{
+				"text": " a porta",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			},
+			{
+				"text": " a porta",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "poderia ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "gostaria que ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			},
+			{
+				"text": " a porta",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "pode ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			},
+			{
+				"text": " a porta",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quero ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			},
+			{
+				"text": " a porta",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "faça ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockInputType"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

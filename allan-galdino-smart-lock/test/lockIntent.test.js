@@ -12,7 +12,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
     test('should return LOCKED status at "LockIntent"', async () => {
       const conversation = testSuite.conversation();
 
-      const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'travar' });
+      const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'trancar' });
       const response = await conversation.send(lockRequest);
 
       expect(response.isTell(expectedLockPrompt)).toBe(true);
@@ -23,7 +23,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
     test('should return UNLOCKED status at "LockIntent"', async () => {
       const conversation = testSuite.conversation();
 
-      const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'destravar' });
+      const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'destrancar' });
       const response = await conversation.send(lockRequest);
 
       expect(response.isTell(expectedUnlockPrompt)).toBe(true);
